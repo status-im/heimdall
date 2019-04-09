@@ -12,7 +12,7 @@ The frontend client is written in node and react, compiled with webpack.
 
 ## Notes and Details
 
-Currently there is no front-end style framework, it is minimalistic just to get something working, and allow for anything to be added and change based on the style-framework de jour.  
+Currently there is no front-end style framework, it is minimalistic just to get something working, and allow for anything to be added and change based on the style-framework _du jour_.  
 
 ### Dependencies
 - dep
