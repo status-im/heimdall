@@ -12,7 +12,8 @@ const query = gql`
     }
   }
 `
-
+// NOTE: this should be broken up so we have atomicity of components, and
+//   a higher level container combines them into the list.  This works for now. 
 const GetNotTodos = () => (
   <Query query={query}>
     {({ loading, error, data }) => {
