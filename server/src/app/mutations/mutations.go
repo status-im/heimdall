@@ -9,5 +9,6 @@ var RootMutation = graphql.NewObject(graphql.ObjectConfig{
 	Name: "RootMutation",
 	Fields: graphql.Fields{
 		"createNotTodo": fields.CreateNotTodo,
+		"deleteNotTodo": fields.DeleteNotTodo,
 	},
 })

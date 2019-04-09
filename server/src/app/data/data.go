@@ -2,7 +2,9 @@ package mongo
 
 import (
 	"context"
-	"github.com/mongodb/mongo-go-driver/mongo"
+	"time"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
-
-var Client, err = mongo.Connect(context.Background(), "mongodb://petty:heimdallAdmin1@ds143559.mlab.com:43559/heimdall", nil)
+var ctx, _ = context.WithTimeout(context.Background(), 10*time.Second)
+var Client, err = mongo.Connect(ctx, options.Client().ApplyURI("mongodb://petty:heimdallAdmin1@ds143559.mlab.com:43559/heimdall"))
