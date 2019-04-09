@@ -40,3 +40,4 @@ Currently there is no front-end style framework, it is minimalistic just to get 
 - [ ] Implement user registration, login, etc
 - [ ] add microservices framework for periodically checking for things and adding results to db
   - potentially queing system could work for this.
+- [ ] Create secrets environment so they aren't hardcoded.
