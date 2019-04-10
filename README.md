@@ -1,18 +1,9 @@
-# go-graphql-react-app Boilerplate
+# Heimdall: High-Value Asset Monitoring
+This repo is a start to a framework for monitoring smart contract details, and who is using them, and how.
 
-I use this to start projects that use these technologies.
+The backend server is uses GraphQL and is written in Go.
 
-Much was taken from [this](https://medium.com/@chrischuck35/how-to-build-a-simple-web-app-in-react-graphql-go-e71c79beb1d) tutorial.
-
-It was a bit outdated, so it was updated through the [mongo-go-driver](https://github.com/mongodb/mongo-go-driver/) docs.
-
-The backend server is written in Go.
-
-The frontend client is written in node and react, compiled with webpack.
-
-## Notes and Details
-
-Currently there is no front-end style framework, it is minimalistic just to get something working, and allow for anything to be added and change based on the style-framework _du jour_.  
+The frontend client is written in Node, Apollo, and react, compiled with webpack.
 
 ### Dependencies
 - dep

@@ -1,8 +1,17 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { withStyles } from '@material-ui/core/styles'
 
 import Home from './home'
 import NotFound from './notFound'
+
+const styles = {
+  root: {
+    margin: 20,
+    padding: 20,
+    maxWidth: 400,
+  }
+}
 
 class AppRouter extends React.Component {
   render() {
@@ -17,4 +26,4 @@ class AppRouter extends React.Component {
   }
 }
 
-export default AppRouter
+export default withStyles(styles)(AppRouter)

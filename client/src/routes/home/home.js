@@ -1,19 +1,33 @@
 import React from 'react'
+import { Grid } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles'
 
-import GetNotTodos from '../../components/GetNotTodos'
-import CreateNotTodo from '../../components/CreateNotTodo'
+import AddAddress from '../../components/AddAddress';
+import GetAllAddresses from '../../components/GetAllAddresses';
+
+
+const styles = theme => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing.unit * 2,
+    textAlign: 'center',
+  },
+})
 
 class Home extends React.Component {
 
   render() {
+    const { classes } = this.props
     return (
-      <div style={{display: 'flex', justifyContent:'center', marginTop: '10%'}} >
-        <CreateNotTodo />
-        <GetNotTodos />
-        
-      </div>
+      <Grid container className={classes.root}>
+        <AddAddress />
+        <GetAllAddresses />
+
+      </Grid>
     )
   }
 }
 
-export default Home
+export default withStyles(styles)(Home)
